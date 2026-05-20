@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <header>
+        <h1>TechNova 26</h1>
+    </header>
+    <nav>
+        <div class = "nav">
+        <a href="index.html">Home</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="events.html">Events</a>
+        </div>
+    </nav>
+    <form id="fform">
+        
+        <p>Feedback Form</p>
+            <label for="name">Student Name: </label> <input type="text" id="name"><br><br>
+            <label for="regnum">Register Number: </label> <input type="number" id="regnum"><br><br>
+            <label for="event">Event Attended: </label>
+            <select id="event">
+                <option disabled selected>Select an event</option>
+                <option value="gamehub">Game Hub</option>
+                <option value="tedai">Ted Talk on AI</option>
+                <option value="tedleader">Ted Talk on Leadership</option>
+                <option value="hallohack">Halloween Hackathon</option>
+                <option value="wpad">Workshop on AutoDesk</option>
+                <option value="f360">Workshop on Fusion 360</option>
+            </select><br><br>
+            <label for="rating">Rating: </label> <br> <input type="number" id="rating"><br><br>
+            <label for="comments">Comments: </label> <br><textarea id="comments" rows="5" cols="30"></textarea><br><br>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        
+    </form>
+    <div id="summary"></div>
+    <footer>
+        <p>Contact: tech@amrita.gmail.com for further information</p>
+     </footer>
+    <script>
+        let form = document.getElementById("fform");
+        form.addEventListener("submit",function(e){
+            e.preventDefault();
+            let name = document.getElementById("name").value;
+            let regnum = document.getElementById("regnum").value;
+            let event = document.getElementById("event").value;
+            let rating = document.getElementById("rating").value;
+            let comments = document.getElementById("comments").value;
+
+            if(name == "" || regnum == "" || event == "" || rating == "" || comments == ""){
+                alert("Please enter all the Fields"); return;
+            }
+            if(regnum == ""){alert("Please enter the Register Number"); return;}
+            if(event == ""){alert("Please select and Event you attended"); return;}
+            if(/^.{20,}$/.test(comments)){alert("Comments should be no more than 20 Characters"); return;}
+
+            alert("Feedback Submitted Successfully");
+
+            let summary = document.getElementById("summary");
+            summary.innerHTML = `
+                <h3>Feedback Summary</h3>
+                <p> Name: ${name}</p>
+                <p>Register Number: ${regnum}</p>
+                <p>Event Attended: ${event}</p>
+                <p>Rating: ${rating}</p>
+                <p>Comments: ${comments}</p>
+            `;
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <header>
+        <h1>TechNova 26</h1>
+    </header>
+    <nav>
+        <div class = "nav">
+        <a href="index.html">Home</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="events.html">Events</a>
+        </div>
+    </nav>
+    <div id = "table">
+    <table border="1">
+        <tr>
+            <th>Event Id</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Date/Time</th>
+            <th>Venue</th>
+            <th>Fee</th>
+            <th>Status</th>
+         
+        </tr>
+        <tr>
+            <td>101</td>
+            <td>Game Hub</td>
+            <td>All Students</td>
+            <td>21-05-2026/10:30 AM</td>
+            <td>Amriteshwari Hall</td>
+            <td>100</td>
+            <td>Open</td>
+        </tr>
+         <tr>
+            <td>102</td>
+            <td>Ted Talk on AI</td>
+            <td>First Year</td>
+            <td>22-05-2026/9:30 AM</td>
+            <td>Sudhamani Hall</td>
+            <td>500</td>
+            <td>Open</td>
+        </tr>
+        <tr>
+            <td>103</td>
+            <td>Ted Talk on Leadership</td>
+            <td>Second Year</td>
+            <td>23-05-2026/11:30 AM</td>
+            <td>Vyasa Hall</td>
+            <td>700</td>
+            <td>Closed</td>
+        </tr>
+<tr>
+            <td>104</td>
+            <td>Halloween Hackathon</td>
+            <td>Third Year</td>
+            <td>24-05-2026/7:30 PM</td>
+            <td>Rama Hall</td>
+            <td>500</td>
+            <td>Open</td>
+        </tr>
+        <tr>
+            <td>105</td>
+            <td>Workshop on Fusion 360</td>
+            <td>All Students</td>
+            <td>25-05-2026/12:30 PM</td>
+            <td>Yoga Hall</td>
+            <td>800</td>
+            <td>Closed</td>
+        </tr>
+    </table>
+    </div>
+    <br><br>
+    
+        
+    <form id="form">
+        <p>Enter Details</p>
+        <span>Student name</span> <br>
+        <input type="text" id="name" placeholder="Student Name"><br>
+        <span>Roll Number</span> <br>
+        <input type="number" id="roll" placeholder="Roll Number"><br>
+        <span>Year</span> <br>
+        <input type="number" id="year" placeholder="Year"><br>
+        <span>Select Events</span> <br>
+        <select id="events" >
+             <option value ="" selected disabled>Select the event</option>
+
+            <option>Game hub</option>
+             <option>Ted talk on AI</option>
+              <option value="" selected disabled>Ted talk on leadership</option>
+               <option>Halloween hackathon</option>
+                <option value="" selected disabled>Workshop on Fusion 360</option>
+        </select><br><br>
+        <span> Enter Team Name</span> <br>
+         <input type="text" id="team" placeholder="Team Name"><br>
+         <span>Enter Team Size</span> <br>
+          <input type="number" id="size" placeholder="Team Size"><br>
+          <button type="submit">Submit</button>
+
+    </form>
+    
+    <script src="script.js" defer></script>
+        <h2>Total Registrations: <span id="count">0</span></h2>
+
+    <div id="result"></div>
+    <footer>
+        <p>Contact: tech@amrita.gmail.com for further information</p>
+     </footer>
+</body>
+</html>

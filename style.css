@@ -1,0 +1,167 @@
+nav a{
+    text-decoration: none;
+    color: black;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-left: 5vw;
+}
+
+a:hover{
+    /* background-color: aqua; */
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+nav{
+    background-color: aliceblue;
+    height: 10vh;
+    align-items: center;
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: center;
+
+}
+
+/* nav div{
+    background-color: red;
+} */
+
+header{
+    text-align: center;
+    height: 5vh;
+}
+
+#banner{
+    width: 100%;
+    height: 85vh;
+}
+
+p{
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2{
+    text-align: center;
+}
+
+footer{
+    margin-top: 3vh;
+    height: 7vh;
+    background-color: aliceblue;
+    align-items: center;
+    display: flex;
+}
+
+#annc p{
+    font-weight: bold;
+}
+
+button{
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: background-color 2s ease;
+    height: 3vh;
+    width: 5vw;
+    /* padding: 1px; */
+}
+
+button:hover{
+    background-color: aqua;
+    transform: scale(1.3);
+     cursor: pointer;
+}
+
+form label{
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form input,select{
+    border: 1px solid black;
+    height: 3vh;
+    border-radius: 5px;
+    width: 90%;
+}
+
+textarea{
+     border: 1px solid black;
+    height: 10vh;
+    border-radius: 5px;
+    width: 90%;
+    margin: 2vh;
+}
+
+/* Events Code */
+
+table{
+    border-collapse: collapse;
+}
+
+#table{
+    margin-top: 3vh;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+table td,th{
+    /* border: 50px; */
+    padding: 5px;
+}
+
+/* #dform{
+    width: 100%;
+    display: flexbox;
+    justify-content: center; */
+    /* background-color: rebeccapurple; */
+/* } */
+#form{
+    width: 20%;
+    justify-content: center;
+    border: 1px solid black;
+    margin: auto;
+    border-radius: 10px;
+    background-color: azure;
+}
+#form input,select,button{
+    margin: 2vh;
+}
+
+#form span{
+    margin-left: 2vh;
+}
+
+#form p{
+    text-align: center;
+}
+
+/* #form input{
+    
+} */
+
+/* Feedback */
+
+#fform{
+    width: 20%;
+    justify-content: center;
+    border: 1px solid black;
+    margin: auto;
+    /* border-radius: 3px; */
+        border-radius: 10px;
+    background-color: azure;
+}
+#fform input,select,button{
+    margin: 2vh;
+}
+
+#fform label{
+    font-size: 20px;
+    margin-left: 2vh;
+}
+
+#fform p{
+    text-align: center;
+}
+
+#fform{
+    margin-top: 5vh;
+}
